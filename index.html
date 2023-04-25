@@ -237,23 +237,168 @@
             </div>
         </section>
         <!-- End categories Section -->
-        <section class="cta section-bg">
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <h2>Why choose us?</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum Lorem ipsum dolor sit,
-                            elit. Reiciendis! architecto cum vero rem dolor quidem nostrum atque impedit quas Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Assumenda, unde.</p>
+                            elit. Reiciendis! architecto cum vero rem dolor quidem nostrum atque impedit quas.</p>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center">
-                        ...
+                    <div class="col-lg-6 d-flex flex-wrap align-items-center justify-content-center">
+                        <div class="client-item">
+                            <img src="assets/images/clients/client-1.png" alt="">
+                        </div>
+                        <div class="client-item">
+                            <img src="assets/images/clients/client-2.png" alt="">
+                        </div>
+                        <div class="client-item">
+                            <img src="assets/images/clients/client-3.png" alt="">
+                        </div>
+                        <div class="client-item">
+                            <img src="assets/images/clients/client-4.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- End Cta Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact US</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis asperiores corporis,
+                        voluptates voluptatum libero nobis nisi dolore delectus exercitationem.</p>
+                </div>
+
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row g-2">
+                                <div class="col-md-6 form-group">
+                                    <input class="form-control" type="text" name="firstName" id="firstName"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input class="form-control" type="text" name="lastName" id="lastName"
+                                        placeholder="Last Name" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input class="form-control" type="text" name="contact" id="contact"
+                                        placeholder="Phone Number *" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input class="form-control" type="email" name="email" id="email"
+                                        placeholder="Email *" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2">
+                                <input class="form-control" type="text" name="address" id="address"
+                                    placeholder="Address" required>
+                            </div>
+                            <div class="form-group mt-2">
+                                <select class="form-select">
+                                    <option selected disabled>Service</option>
+                                    <option value="1">Service 01</option>
+                                    <option value="2">Service 02</option>
+                                    <option value="3">Service 03</option>
+                                    <option value="other">other</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="5"
+                                    placeholder="Product Description: *" required></textarea>
+                            </div>
+                            <div class="form-group mt-2">
+                                <input class="form-control" type="text" name="address" id="address"
+                                    placeholder="How did you hear about us?" required>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Now</button></div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Contact Section -->
     </main>
-    <footer></footer>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content position-relative">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo.png" alt="...">
+                            </div>
+                            <div class="social-links d-flex">
+                                <a class="facebook" href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                                <a class="instagram" href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a class="youtube" href="#"><i class='bx bxl-youtube' ></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End footer info column-->
+
+                    <div class="col footer-links">
+                        <h4>Important Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+                    </div><!-- End footer links column-->
+
+                    <div class="col footer-links">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Term & Conditions</a></li>
+                        </ul>
+                    </div><!-- End footer links column-->
+
+                    <div class="col footer-links">
+                        <h4>Contact Us</h4>
+                        <h3><a href="index.html">Metal Buildings</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">info@email.com</a>
+                        <p>(903)254-0000</p>
+                    </div>
+                    <!-- End footer links column-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal text-center position-relative">
+            <div class="container">
+                <div class="copyright">
+                    <span>Copyright &copy; 2023 Steel - All Rights Reserved.</span>
+                </div>
+                <div class="credits">
+                    Designed by - <a href="#">PIET Innovation Group</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
