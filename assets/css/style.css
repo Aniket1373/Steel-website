@@ -205,6 +205,8 @@ h6 {
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
+  transition: 0.3s ease-in-out;
+  clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
 }
 
 .navbar a:last-child {
@@ -220,7 +222,7 @@ h6 {
   height: calc(100% + 10px);
   background: var(--hover);
   clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
-  transition: all 0.3s;
+  transition: 0.3s ease-in-out;
   opacity: 0;
 }
 
@@ -232,7 +234,6 @@ h6 {
   background: var(--hover);
   clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
   opacity: 1;
-  transition: 0.3s;
 }
 
 /**
@@ -300,6 +301,7 @@ h6 {
     font-size: 12px;
     top: 20px;
     letter-spacing: 0.3px;
+    clip-path: polygon(3% 0, 100% 0, 96% 100%, 0% 100%);
   }
 
   .navbar a:before {
@@ -333,6 +335,7 @@ h6 {
     font-size: 12px;
     top: 20px;
     letter-spacing: 0.3px;
+    clip-path: polygon(3% 0, 100% 0, 96% 100%, 0% 100%);
   }
 
   .navbar a:before {
@@ -519,10 +522,9 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
   font-size: 7rem;
   font-weight: 800;
-  line-height: 56px;
+  line-height: 7rem;
   color: #fff;
 }
 
@@ -535,7 +537,7 @@ h6 {
   width: 70%;
   line-height: 30px;
   animation-delay: 0.4s;
-  margin: 40px auto 48px auto;
+  margin: 10px auto 48px auto;
 }
 
 #hero .btn-hero {
@@ -1249,6 +1251,85 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px 30px 0 30px;
+  margin: 30px 15px;
+  text-align: center;
+  min-height: 350px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #e1f0fa;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid var(--secondary);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
+
+/*--------------------------------------------------------------
 # CTA
 --------------------------------------------------------------*/
 .cta {
@@ -1582,8 +1663,9 @@ section {
 }
 
 .breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--title-dark);
 }
 
 .breadcrumbs ol {
@@ -1788,3 +1870,172 @@ section {
 .footer .footer-legal .credits a:hover {
   color: var(--hover);
 }
+
+/*--------------------------------------------------------------
+# About Section Start -------------
+--------------------------------------------------------------*/
+.about-section h2 {
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-family: var(--primary-font);
+  margin: 30px 0;
+}
+
+@media (min-width: 991px) {
+  .about-section h2 {
+    max-width: 65%;
+    margin: 0 0 80px 0;
+  }
+}
+
+.about-section .our-story {
+  padding: 40px;
+  background-color: #f5f6f7;
+  border-radius: 4px;
+}
+
+@media (min-width: 991px) {
+  .about-section .our-story {
+    padding-right: 35%;
+  }
+}
+
+.about-section .our-story h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #838893;
+}
+
+.about-section .our-story h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+.about-section .our-story p {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.about-section .our-story p:last-child {
+  margin-bottom: 0;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.about-section ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.about-section ul i {
+  font-size: 20px;
+  margin-right: 4px;
+  color: var(--primary);
+}
+
+.about-section .about-section-img {
+  min-height: 550px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+  .about-section .about-section-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Our Team Section
+--------------------------------------------------------------*/
+.team .member {
+  position: relative;
+}
+
+.team .member .member-img {
+  margin: 0 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .team .member .member-img {
+    margin: 0 60px;
+  }
+}
+
+.team .member .member-img img {
+  position: relative;
+  z-index: 1;
+}
+
+.team .member .member-img .social {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-bottom: 20px;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.team .member .member-img .social a {
+  transition: 0.3s;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+.team .member .member-img .social a:hover {
+  color: var(--color-primary);
+}
+
+.team .member .member-info {
+  margin-top: 30px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: var(--color-secondary);
+}
+
+.team .member .member-info span {
+  font-style: italic;
+  display: block;
+  font-size: 15px;
+  color: #838893;
+  margin-bottom: 10px;
+}
+
+.team .member .member-info p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.team .member:hover .member-img .social {
+  padding-bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
