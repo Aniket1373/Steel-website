@@ -12,7 +12,8 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
 
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -70,77 +71,62 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <ol>
                         <li><a href="index.html">Home</a></li>
-                        <li>Contact Us</li>
+                        <li>Products</li>
                     </ol>
                 </div>
-                <h2>Contact Us</h2>
+                <h2>Products</h2>
             </div>
         </section><!-- End Breadcrumbs -->
 
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
+        <!-- ======= product Details Section ======= -->
+        <section id="product-details" class="product-details">
             <div class="container">
-                <div class="section-title">
-                    <h2>Estimate Request</h2>
-                    <p>To request an estimate, please provide us with some basic information about your requirements by filling out the form below. <br>Once we receive your request, one of our representatives will contact you to discuss your requirements in more detail and provide you with a personalized estimate.</p>
-                </div>
 
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row g-2">
-                                <div class="col-md-6 form-group">
-                                    <input class="form-control" type="text" name="firstName" id="firstName"
-                                        placeholder="First Name" required>
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="product-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/banners/01.png" alt="">
                                 </div>
-                                <div class="col-md-6 form-group">
-                                    <input class="form-control" type="text" name="lastName" id="lastName"
-                                        placeholder="Last Name" required>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/banners/02.png" alt="">
                                 </div>
-                                <div class="col-md-6 form-group">
-                                    <input class="form-control" type="text" name="contact" id="contact"
-                                        placeholder="Phone Number *" required>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/banners/13.png" alt="">
                                 </div>
-                                <div class="col-md-6 form-group">
-                                    <input class="form-control" type="email" name="email" id="email"
-                                        placeholder="Email *" required>
-                                </div>
+
                             </div>
-                            <div class="form-group mt-2">
-                                <input class="form-control" type="text" name="address" id="address"
-                                    placeholder="Address" required>
-                            </div>
-                            <div class="form-group mt-2">
-                                <select class="form-select">
-                                    <option selected disabled>Service</option>
-                                    <option value="1">Service 01</option>
-                                    <option value="2">Service 02</option>
-                                    <option value="3">Service 03</option>
-                                    <option value="other">other</option>
-                                </select>
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5"
-                                    placeholder="Product Description: *" required></textarea>
-                            </div>
-                            <div class="form-group mt-2">
-                                <input class="form-control" type="text" name="address" id="address"
-                                    placeholder="How did you hear about us?" required>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Now</button></div>
-                        </form>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="product-info">
+                            <h3>Product Details</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Rods</li>
+                                <li><strong>Rating</strong>: 9/10</li>
+                                <!-- <li><strong>Project date</strong>: 01 March, 2020</li> -->
+                                <!-- <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="product-description">
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                            <p>
+                                Our TMT bars are made from high-quality steel and are designed to provide superior strength and durability. TMT bars are widely used in the construction industry for building foundations, columns, and beams. Our TMT bars are available in various sizes and grades, and we can provide customized solutions to meet your specific requirements.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
-        </section>
-        <!-- End Contact Section -->
+        </section><!-- End product Details Section -->
     </main>
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
@@ -215,7 +201,7 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
         <i class="bi bi-arrow-up-short"></i>
     </a>
-    
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
