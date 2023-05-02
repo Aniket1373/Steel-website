@@ -2002,7 +2002,7 @@ section {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: var(--text-color);
+  color: var(--text-gray);
 }
 
 .team .member p {
@@ -2017,7 +2017,7 @@ section {
 }
 
 .team .member .social a {
-  color: #919191;
+  color: var(--text-gray);
   transition: 0.3s;
 }
 
@@ -2033,9 +2033,6 @@ section {
 /*--------------------------------------------------------------
 # product
 --------------------------------------------------------------*/
-.product {
-  padding: 20px 0;
-}
 
 .product #product-flters {
   padding: 0;
@@ -2251,4 +2248,120 @@ section {
 .product-details .product-description p {
   color: var(--text-gray);
   padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Featured Details Section
+--------------------------------------------------------------*/
+.featured-details .features-list {
+  padding: 10px 30px;
+  border: 1px solid #d5d7da;
+  margin-bottom: 20px;
+}
+
+.featured-details .features-list a {
+  display: block;
+  line-height: 1;
+  padding: 8px 0 8px 15px;
+  border-left: 3px solid #d9e3e8;
+  margin: 20px 0;
+  color: var(--title-dark);
+  transition: 0.3s;
+}
+
+.featured-details .features-list a.active {
+  font-weight: 700;
+  border-color: var(--primary);
+}
+
+.featured-details .features-list a:hover {
+  border-color: var(--primary);
+}
+
+.featured-details .services-img {
+  margin-bottom: 20px;
+}
+
+.featured-details h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.featured-details h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.featured-details p {
+  font-size: 15px;
+  color: var(--text-gray);
+}
+
+.featured-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.featured-details ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.featured-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Docs Section
+--------------------------------------------------------------*/
+.docs {
+  padding: 60px 0;
+}
+
+.docs .content{
+  padding: 30px;
+  border: 1px solid #d9e3e8;
+}
+
+.docs h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.docs .content h3{
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+
+.docs .content p {
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+.docs ul {
+  list-style: none;
+}
+
+.docs ul span {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: var(--primary-font);
+}
+
+.docs ul> li> p {
+  color: var(--primary);
+  font-size: 20px;
+  font-style: var(--primary-font);
+  padding: 10px 0;
 }
